@@ -1,6 +1,7 @@
 import { TronWeb } from "tronweb";
+import "dotenv/config";
 
-const API_KEY = "c20fc43c-a760-4f40-a8a8-bbe8e01feb9c";
+const API_KEY = process.env.API_KEY;
 
 const tronWeb = new TronWeb({
   fullHost: "https://api.trongrid.io",
